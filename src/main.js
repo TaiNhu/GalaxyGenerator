@@ -72,7 +72,7 @@ const generateGalaxy = () => {
 
     geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
     geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3))
-    star = textLoader.load(`/textures/particles/${parameters.textures}.png`)
+    star = textLoader.load(`/GalaxyGenerator/textures/particles/${parameters.textures}.png`)
 
     material = new THREE.PointsMaterial({
         size: parameters.size,
