@@ -59,7 +59,7 @@ export default class Galaxy {
 
         this.geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
         this.geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3))
-        this.star = textLoader.load(`/textures/particles/${this.parameters.textures}.png`)
+        this.star = textLoader.load(`/GalaxyGenerator/textures/particles/${this.parameters.textures}.png`)
 
         this.material = new THREE.PointsMaterial({
             size: this.parameters.size,
